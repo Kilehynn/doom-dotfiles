@@ -26,7 +26,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-moonlight)
-(setq doom-font (font-spec :family "Fira Code" :size 20))
+(setq doom-font (font-spec :family "Fira Code" :size 18))
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
@@ -71,7 +71,7 @@
 ;; they are implemented.
 (setq x-select-enable-clipboard-manager nil)
 (setq org-support-shift-select t)
-
+(setq x-super-keysym 'meta)
 (use-package! org-pandoc-import :after org)
 (use-package! org-roam
   :after org
